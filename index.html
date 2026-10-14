@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JLDRTCMY8N"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JLDRTCMY8N');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#120B07" />
+    <meta name="description" content="Hamburgame — mini games for Hamburgasm guests · mini-jeux pour les clients de Hamburgasm. Flip. Stack. Serve." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hamburgame</title>
+    <script type="module" crossorigin src="./assets/main-DrjpuloY.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/config-B0V2sC6u.js">
+    <link rel="stylesheet" crossorigin href="./assets/main-Cgo6Zvf-.css">
+  </head>
+  <body data-mode="home">
+    <div class="bg-base" aria-hidden="true"></div>
+    <canvas id="bg3d" aria-hidden="true"></canvas>
+    <div class="bg-vignette" aria-hidden="true"></div>
+
+    <div class="top-actions">
+      <div class="lang-switch" role="group" aria-label="Language" data-i18n-aria="lang.label">
+        <button type="button" data-lang="en" lang="en">EN</button>
+        <button type="button" data-lang="fr" lang="fr">FR</button>
+      </div>
+      <button id="fs-toggle" class="icon-btn fs-toggle" type="button" aria-label="Full screen" hidden>
+        <svg class="enter" viewBox="0 0 24 24" width="22" height="22"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg class="exit" viewBox="0 0 24 24" width="22" height="22"><path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+
+    <main id="app"></main>
+
+    <nav class="tabbar" aria-label="Main" data-i18n-aria="nav.main">
+      <a href="#/" data-tab="home">
+        <svg viewBox="0 0 24 24" width="24" height="24"><rect x="2.5" y="7" width="19" height="11" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7.5 10.5v4M5.5 12.5h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="15.5" cy="11.5" r="1.2" fill="currentColor"/><circle cx="17.8" cy="13.8" r="1.2" fill="currentColor"/></svg>
+        <span data-i18n="nav.games">Games</span>
+      </a>
+      <a href="#/menu" data-tab="menu">
+        <svg viewBox="0 0 24 24" width="24" height="24"><path d="M3.5 11a8.5 6 0 0117 0z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M3 14.5h18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M4 18h16l-1 1.8a1.5 1.5 0 01-1.3.7H6.3a1.5 1.5 0 01-1.3-.7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        <span data-i18n="nav.menu">Menu</span>
+      </a>
+      <a href="#/credits" data-tab="credits">
+        <svg viewBox="0 0 24 24" width="24" height="24"><circle cx="12" cy="8.5" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4.5 20.5c1.2-4 4-5.5 7.5-5.5s6.3 1.5 7.5 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span data-i18n="nav.credits">Credits</span>
+      </a>
+      <button id="sound-toggle" class="icon-btn sound-toggle" aria-pressed="true" aria-label="Turn sound off">
+        <svg class="on" viewBox="0 0 24 24" width="22" height="22"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path d="M16 8.5a5 5 0 010 7M18.5 6a8.5 8.5 0 010 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        <svg class="off" viewBox="0 0 24 24" width="22" height="22"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path d="M17 9l5 6M22 9l-5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </nav>
+
+    <noscript><p style="color:#fff;text-align:center;padding:40px">Please enable JavaScript to play Hamburgame. · Active JavaScript pour jouer à Hamburgame.</p></noscript>
+  </body>
+</html>

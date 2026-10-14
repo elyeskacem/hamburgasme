@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet" />
+    <title>Hamburgame QR Card</title>
+    <script type="module" crossorigin src="./assets/qr-B_8UZy1_.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/config-B0V2sC6u.js">
+    <link rel="stylesheet" crossorigin href="./assets/qr-CiMJkD2E.css">
+  </head>
+  <body>
+    <div class="tools no-print">
+      <h1>Table QR card</h1>
+      <p>Print this card and place it on the tables. Guests scan it to open the games.</p>
+      <label for="url">Link inside the QR code</label>
+      <input id="url" type="url" spellcheck="false" />
+      <p class="hint" id="hint"></p>
+      <div class="row">
+        <button id="print" class="btn primary">Print cards</button>
+        <button id="download" class="btn">Download QR (PNG)</button>
+        <label class="check"><input type="checkbox" id="four" checked /> 4 cards per page</label>
+      </div>
+    </div>
+
+    <div id="sheet" class="sheet four"></div>
+
+    <template id="card-tpl">
+      <article class="qr-card">
+        <img class="logo" src="./logo.png" alt="Hamburgame" />
+        <h2>Envie de jouer&nbsp;?</h2>
+        <p class="sub">Scanne et joue à nos mini-jeux pendant que ton burger grille.</p>
+        <p class="sub en">Hungry for fun? Scan &amp; play while your burger is on the grill.</p>
+        <div class="qr-box"><img class="qr" alt="QR code" /></div>
+        <p class="steps"><span>1</span> Caméra · Camera <span>2</span> Scanne · Scan <span>3</span> Joue · Play!</p>
+        <p class="url"></p>
+      </article>
+    </template>
+
+  </body>
+</html>
